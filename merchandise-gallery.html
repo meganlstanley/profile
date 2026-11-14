@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Merchandise Gallery | Megan Stanley Botanical Studio</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Allura&family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Your existing website stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Gallery-specific styling -->
+    <style>
+        .merch-gallery-page {
+            margin: 0;
+            background: #F8F7ED;
+            color: #2E2E2E;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .gallery-header {
+            padding: 2rem 6%;
+        }
+
+        .gallery-back {
+            color: #1F4D3A;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .gallery-back:hover {
+            text-decoration: underline;
+        }
+
+        .gallery-intro {
+            max-width: 760px;
+            margin: 0 auto;
+            padding: 3rem 6%;
+            text-align: center;
+        }
+
+        .gallery-eyebrow {
+            color: #6B8F71;
+            font-size: 0.8rem;
+            font-weight: 700;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+        }
+
+        .gallery-intro h1 {
+            color: #1F4D3A;
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2.5rem, 6vw, 4rem);
+            margin: 1rem 0;
+        }
+
+        .gallery-intro p {
+            line-height: 1.8;
+            color: #555;
+        }
+
+        .gallery-section {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 6% 4rem;
+        }
+
+        .gallery-section h2 {
+            color: #1F4D3A;
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.75rem;
+            border-bottom: 1px solid #A7C4A0;
+        }
+
+        /* Photo grid */
+        .merch-photo-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 1.2rem;
+        }
+
+        .merch-photo-card {
+            margin: 0;
+            overflow: hidden;
+            border-radius: 10px;
+            background: white;
+        }
+
+
+
+        .merch-photo-link img {
+            display: block;
+            width: 100%;
+            aspect-ratio: 4 / 3;
+            object-fit: contain;
+            background-color: #F8F7ED;
+            transition: transform 0.25s ease;
+        }
+
+        .merch-photo-link:hover img,
+        .merch-photo-link:focus-visible img {
+            transform: scale(1.04);
+        }
+
+        .merch-photo-link:focus-visible {
+            outline: 3px solid #D6B055;
+            outline-offset: -3px;
+        }
+
+        .gallery-footer {
+            padding: 2.5rem 6%;
+            background: #1F4D3A;
+            text-align: center;
+        }
+
+        .gallery-footer a {
+            color: #F8F7ED;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .gallery-footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Tablet */
+        @media (max-width: 800px) {
+            .merch-photo-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+        /* Mobile */
+        @media (max-width: 520px) {
+            .merch-photo-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .gallery-section h2 {
+                font-size: 1.6rem;
+            }
+        }
+    </style>
+</head>
+
+<body class="merch-gallery-page">
+
+    <header class="gallery-header">
+        <a class="gallery-back" href="index.html#work">
+            ← Back to Portfolio
+        </a>
+    </header>
+
+    <main>
+
+        <section class="gallery-intro">
+            <div class="gallery-eyebrow">
+                Selected Work · Creative Project Coordination
+            </div>
+
+            <h1>Merchandise Gallery</h1>
+
+            <p>
+                A collection of merchandise designs, creative collaborations,
+                and event displays I've helped bring to life.
+            </p>
+        </section>
+
+        <!-- MERCHANDISE & SHIRT DESIGNS -->
+        <section class="gallery-section">
+            <h2>Merchandise &amp; Shirt Designs</h2>
+
+            <div class="merch-photo-grid">
+
+                <figure class="merch-photo-card">
+                    <a class="merch-photo-link" href="images/zionposter.png" target="_blank" rel="noopener">
+                        <img src="images/zionposter.png" alt="Zion Half Poster" loading="lazy">
+                    </a>
+                </figure>
+
+                <figure class="merch-photo-card">
+                    <a class="merch-photo-link" href="images/zion.png" target="_blank" rel="noopener">
+                        <img src="images/zion.png" alt="Zion race shirt" loading="lazy">
+                    </a>
+                </figure>
+
+                <figure class="merch-photo-card">
+                    <a class="merch-photo-link" href="images/yosemitemerch.png" target="_blank" rel="noopener">
+                        <img src="images/yosemitemerch.png" alt="Yosemite merch shirt" loading="lazy">
+                    </a>
+                </figure>
+
+                <figure class="merch-photo-card">
+                    <a class="merch-photo-link" href="images/costaricaposter.png" target="_blank" rel="noopener">
+                        <img src="images/costaricaposter.png" alt="Costa Rica Poster" loading="lazy">
+                    </a>
+                </figure>
+
+                <figure class="merch-photo-card">
+                    <a class="merch-photo-link" href="images/glaciershirt.png" target="_blank" rel="noopener">
+                        <img src="images/glaciershirt.png" alt="Glacier half shirt" loading="lazy">
+                    </a>
+                </figure>
+
+                <figure class="merch-photo-card">
+                    <a class="merch-photo-link" href="images/saguarodesign.png" target="_blank" rel="noopener">
+                        <img src="images/saguarodesign.png" alt="Saguaro shirt design" loading="lazy">
+                    </a>
+                </figure>
+
+                <figure class="merch-photo-card">
+                    <a class="merch-photo-link" href="images/globalraceshirt.png" target="_blank" rel="noopener">
+                        <img src="images/globalraceshirt.png" alt="Global Race Shirt" loading="lazy">
+                    </a>
+                </figure>
+
+                <figure class="merch-photo-card">
+                    <a class="merch-photo-link" href="images/antelopeshirt.png" target="_blank" rel="noopener">
+                        <img src="images/antelopeshirt.png" alt="Antelope shirt" loading="lazy">
+                    </a>
+                </figure>
+
+                <figure class="merch-photo-card">
+                    <a class="merch-photo-link" href="images/saguaroraceshirt.png" target="_blank" rel="noopener">
+                        <img src="images/saguaroraceshirt.png" alt="Saguaro race shirt design" loading="lazy">
+                    </a>
+                </figure>
+
+                <figure class="merch-photo-card">
+                    <a class="merch-photo-link" href="images/glacierrace.jpeg" target="_blank" rel="noopener">
+                        <img src="images/glacierrace.jpeg" alt="Glacier Race shirt" loading="lazy">
+                    </a>
+                </figure>
+
+                <figure class="merch-photo-card">
+                    <a class="merch-photo-link" href="images/patchhat.jpeg" target="_blank" rel="noopener">
+                        <img src="images/patchhat.jpeg" alt="VR Patch Hat" loading="lazy">
+                    </a>
+                </figure>
+
+                <figure class="merch-photo-card">
+                    <a class="merch-photo-link" href="images/zioncoyote.PNG" target="_blank" rel="noopener">
+                        <img src="images/zioncoyote.PNG" alt="Zion Coyote design" loading="lazy">
+                    </a>
+                </figure>
+            </div>
+        </section>
+
+        <!-- EVENT BOOTHS & DISPLAYS -->
+        <section class="gallery-section">
+            <h2>Event Booths &amp; Displays</h2>
+
+            <div class="merch-photo-grid">
+
+                <figure class="merch-photo-card">
+                    <a class="merch-photo-link" href="images/fullbooth.jpeg" target="_blank" rel="noopener">
+                        <img src="images/fullbooth.jpeg" alt="Full Booth Display at RM" loading="lazy">
+                    </a>
+                </figure>
+
+                <figure class="merch-photo-card">
+                    <a class="merch-photo-link" href="images/fullbooth2.jpeg" target="_blank" rel="noopener">
+                        <img src="images/fullbooth2.jpeg" alt="Full Booth 2" loading="lazy">
+                    </a>
+                </figure>
+
+                <figure class="merch-photo-card">
+                    <a class="merch-photo-link" href="images/pinkskybooth.jpeg" target="_blank" rel="noopener">
+                        <img src="images/pinkskybooth.jpeg" alt="LP pink sky Booth" loading="lazy">
+                    </a>
+                </figure>
+
+                <figure class="merch-photo-card">
+                    <a class="merch-photo-link" href="images/gooddisplay.jpeg" target="_blank" rel="noopener">
+                        <img src="images/gooddisplay.jpeg" alt="Display inside booth" loading="lazy">
+                    </a>
+                </figure>
+
+                <figure class="merch-photo-card">
+                    <a class="merch-photo-link" href="images/rumpledisplay.jpeg" target="_blank" rel="noopener">
+                        <img src="images/rumpledisplay.jpeg" alt="Rumple Display" loading="lazy">
+                    </a>
+                </figure>
+
+                <figure class="merch-photo-card">
+                    <a class="merch-photo-link" href="images/goodrs.jpeg" target="_blank" rel="noopener">
+                        <img src="images/goodrs.jpeg" alt="Goodrs Display" loading="lazy">
+                    </a>
+                </figure>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="gallery-footer">
+        <a href="index.html#work">
+            ← Return to Work History &amp; Portfolio
+        </a>
+    </footer>
+
+</body>
+
+</html>
